@@ -107,8 +107,10 @@ body {
     text-align: center;
 }
 
-.lista-rodapé {
-    
+.lista-rodapé ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 768px) {
