@@ -1,0 +1,142 @@
+
+:root {
+    --cor-de-fundo: #ebecee;
+    --branco: #ffffff;
+    --laranja: #eb9b00;
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #002f52;
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;    
+}
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+
+}
+
+.principal__titulo {
+    font-size: 80px;
+    font-weight: 700;
+}
+.container__caixa {
+    margin: 0 6em;
+}
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+/* Seção de Colunas */
+.colunas {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.coluna {
+    flex: 1;
+    max-width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.coluna h2 {
+    margin-bottom: 10px;
+}
+
+.coluna p {
+    font-size: 1em;
+}
+
+.coluna img {
+    max-width: 100%;
+}
+.rodapé {
+    background-color: rgb(152, 232, 236);
+    height: 200px;
+    padding: 15px;
+    text-align: center;
+}
+
+.lista-rodapé {
+    
+}
+
+@media (max-width: 768px) {
+    .colunas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coluna {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .principal h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .principal h1 {
+        font-size: 2em;
+    }
+
+    .colunas {
+        padding: 20px 10px;
+    }
+
+    .coluna p {
+        font-size: 0.9em;
+    }
+}
