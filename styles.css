@@ -25,14 +25,14 @@ body {
     padding: 0;
 }
 
-#container {
+.container {
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;    
 }
 
 .principal {
-    background-image: url("img/background.png");
+    background-image: url("/img/background.png");
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
